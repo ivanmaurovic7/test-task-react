@@ -1,0 +1,92 @@
+.event
+    display: flex
+    justify-content: space-between
+    box-shadow: 1px 2px 7px rgba(0,0,0,.15) !important
+    box-sizing: border-box
+    .date, .title, .author, .description
+        display: block
+    .date
+        color: #d1d3d6
+    .title
+        font-size: 20px
+        margin-top: 10px
+        margin-bottom: -2px
+        color: #37414b
+    .author
+        font-size: 14px
+        color: #878383
+    .description
+        font-size: 15px
+        color: #949ea8
+    .cardActions
+        display: flex
+        justify-content: space-between
+        align-items: center
+        .attendants
+            display: flex
+            align-items: center
+            .icon
+                margin-right: 5px
+                margin-bottom: 4px
+            span
+                font-size: 14px
+            .icon, span
+                color: #949ea8
+        button
+            width: 90px
+            padding-top: 8px
+            color: #fff
+
+.event.grid
+    flex-direction: column
+    width: 24vw
+    margin: 1vw
+    @media (max-width: 1100px)
+        width: 100%
+        margin: 10px 0
+    min-height: 300px
+    padding: 15px
+
+.event.list
+    margin: 10px
+    width: 100%
+    @media (min-width: 1100px)
+        padding: 5px 25px 5px 20px
+        align-items: center
+        min-height: 50px
+    @media (max-width: 1100px)
+        padding: 5px
+        flex-direction: column
+    .eventDetails
+        display: flex
+        @media (max-width: 1100px)
+            flex-direction: column
+            .date
+                position: relative
+                top: 27px
+            .author
+                display: none
+        @media (min-width: 1100px)
+            width: 70%
+            justify-content: space-between
+            align-items: center
+        .date, .title, .author, .description
+            @media (min-width: 1100px)
+                width: 25%
+            margin: 0
+        .title
+            font-size: 17px
+            order: 1
+        .description
+            order: 2
+        .author
+            order: 3
+        .date
+            order: 4
+    .cardActions
+        .attendants
+            @media (max-width: 1100px)
+                margin-left: 10px
+            .icon
+                display: none
+            margin-right: 40px

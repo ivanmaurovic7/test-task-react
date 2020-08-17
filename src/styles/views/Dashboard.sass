@@ -1,0 +1,64 @@
+.dashboardPage
+    background-color: #f9f9fb
+    min-height: 100vh
+    .navbar
+        height: 90px
+        display: flex
+        justify-content: flex-end
+        align-items: center
+        margin-right: 40px
+        @media (max-width: 1100px)
+            margin-right: 10px
+    .eventDisplayBar, .events
+        margin: 0 10vw
+    .eventDisplayBar
+        @media (max-width: 1100px)
+            margin: 0 20px
+    .events
+        position: relative
+        .loader
+            position: absolute
+            left: 0
+            right: 0
+            bottom: 0
+            top: 0
+            margin: auto
+        @media (max-width: 1100px)
+            margin: 0 10px
+    .eventDisplayBar
+        margin-top: 80px
+        margin-bottom: 30px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        .filterButtons, .displayButtons
+            button
+                border-right: 0
+        .filterButtons
+            @media (max-width: 1100px)
+                display: none
+            button
+                margin-right: 20px
+        .filterButtonsMobile
+            @media (min-width: 1100px)
+                display: none
+    .events
+        display: flex
+        flex-wrap: wrap
+    .addEventContainer
+        position: fixed
+        bottom: 40px
+        right: 50px
+        background-color: #fff
+        border-radius: 50%
+        width: 40px
+        height: 50px
+        .addEvent
+            position: absolute
+            left: -10px
+            top: -5px
+            margin: auto
+            font-size: 60px
+            color: #333
+            &:hover
+                cursor: pointer

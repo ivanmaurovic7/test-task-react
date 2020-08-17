@@ -1,0 +1,66 @@
+.addEventPage
+    background-color: #f9f9fb
+    min-height: 100vh
+    .navbar
+        height: 90px
+        display: flex
+        justify-content: flex-end
+        align-items: center
+        margin-right: 40px
+        @media (max-width: 1100px)
+            margin-right: 00px
+        button
+            .closeIcon
+                position: relative
+                bottom: 1px
+            .closeLabel
+                @media (max-width: 1100px)
+                    display: none
+    .addEvent
+        width: 500px
+        max-width: 90vw
+        padding-top: 30px
+        margin: 70px auto 50px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        h3
+            font-family: 'Hind-Light'
+            font-size: 26px
+            color: #323c46
+            margin-bottom: 8px
+        small
+            font-family: 'Hind'
+            font-weight: 500
+            color: #949ea8
+            margin-bottom: 30px
+            font-size: 15px
+        .inputComponent
+            width: 400px
+            max-width: 80vw
+            margin-bottom: 25px
+        .signUp
+            @media (min-width: 1100px)
+                position: absolute
+                top: 30px
+                right: 60px
+            @media (max-width: 1100px)
+                margin: 20px 0 60px
+            span
+                color: #cacfd4
+            a
+                display: inline-block
+                margin-left: 10px
+                text-decoration: none
+                font-weight: 600
+                color: #b0b7bf
+        .buttonComponent
+            padding-top: 12px
+            margin: 10px 0 80px
+            width: 220px
+            background-color: #22d486
+            color: #fff
+            font-weight: 500
+            font-size: 14px
+            letter-spacing: 1.5px
